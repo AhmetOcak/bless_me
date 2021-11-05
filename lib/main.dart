@@ -1,12 +1,14 @@
+import 'package:bless_me/screens/holy_screen.dart';
 import 'package:flutter/material.dart';
 import 'screens/home_screen.dart';
 
 void main() {
   runApp(MaterialApp(
     debugShowCheckedModeBanner: false,
-    initialRoute: '/home',
+    initialRoute: '/holy',
     routes: {
-      '/home': (context) => HomeScreen(),
+      '/holy': (context) => const HolyScreen(),
+      '/home': (context) => const HomeScreen(),
     },
   ));
 }
